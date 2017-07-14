@@ -1,11 +1,5 @@
-build/*
-dist/*
-tests/*
-itchat.egg-info/*
-*.pyc
-*.pkl
-*.swp
-test.py
-itchat.pkl
-QR.jpg
-.DS_Store
+
+.idea/
+itchat/__pycache__/
+itchat/components/__pycache__/
+itchat/storage/__pycache__/
