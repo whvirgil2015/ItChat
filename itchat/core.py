@@ -7,6 +7,7 @@ from .components import load_components
 
 class Core(object):
     def __init__(self):
+        print("Core().__init__")
         ''' init is the only method defined in core.py
             alive is value showing whether core is running
                 - you should call logout method to change it
@@ -441,6 +442,7 @@ class Core(object):
         ''' a decorator constructor
             return a specific decorator based on information given
         '''
+        print("Core().msg_register msgType=%s " % str(msgType))
         raise NotImplementedError()
     def run(self, debug=True, blockThread=True):
         ''' start auto respond
@@ -457,5 +459,5 @@ class Core(object):
         return self.storageClass.search_chatrooms(name, userName)
     def search_mps(self, name=None, userName=None):
         return self.storageClass.search_mps(name, userName)
-
+print("itchat.core.py before load_components(Core)")
 load_components(Core)

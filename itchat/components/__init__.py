@@ -5,6 +5,7 @@ from .messages import load_messages
 from .register import load_register
 
 def load_components(core):
+    print("itchat.components.__init__.py core=%s %s" % (str(type(core)), str(core)))
     load_contact(core)
     load_hotreload(core)
     load_login(core)

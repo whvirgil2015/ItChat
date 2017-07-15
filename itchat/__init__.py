@@ -1,7 +1,19 @@
+print("itchat.__init__.py start")
+
 from . import content
+
+print("itchat.__init__.py after import content")
 from .core import Core
+
+print("itchat.__init__.py after import Core")
+
 from .config import VERSION
+
+print("itchat.__init__.py after import VERSION")
+
 from .log import set_logging
+print("itchat.__init__.py after import set_logging")
+
 
 __version__ = VERSION
 
@@ -12,6 +24,7 @@ def new_instance():
     instanceList.append(newInstance)
     return newInstance
 
+print("itchat.__init__.py")
 originInstance = new_instance()
 
 # I really want to use sys.modules[__name__] = originInstance

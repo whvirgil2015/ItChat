@@ -3,7 +3,9 @@
 # https://github.com/littlecodersh/ItChat.git
 # import itchat
 
+import test_import_init
 import itchat
+
 # from .. import itchat
 
 
@@ -12,6 +14,5 @@ def print_content(msg):
     print("print_content called ")
     print(msg['Text'])
 
-itchat.auto_login(enableCmdQR=False)
-itchat.run()
-
+# itchat.auto_login(enableCmdQR=False)
+# itchat.run()
